@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.callButton}>
-          <Image src="/img/telephone.png" width={32} height={32}/>
+          <Image src="/img/telephone.png" alt="" width={32} height={32}/>
         </div>
         <div className={styles.texts}>
           <div className={styles.texts}>ENCOMENDE JÁ!</div>
@@ -25,9 +25,14 @@ const NavBar = () => {
           <li className={styles.listItems}>Contactos</li>
         </ul>
       </div>
-      <div className={styles.item}>right</div>
+      <div className={styles.item}>
+        <div className={styles.cart}>
+          <Image src="/img/cart.png" alt="" width="32" height="32"/>
+          <div className={styles.counter}>2</div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default NavBar
