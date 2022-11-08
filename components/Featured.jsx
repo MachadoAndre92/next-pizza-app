@@ -5,17 +5,18 @@ import Image from 'next/image'
 const Featured = () => {
     const images=[
         "/img/featured.png",
-        "/img/featured.png",
-        "/img/featured.png",
+        "/img/featured2.png",
+        
     ];
   return (
     <div className={styles.container}>
         
-        <div className={styles.wrapper}>            
+        <div className={styles.wrapper}>  
+            {console.log(images)}          
             {images.map((img, i)=>(
                 <div className={styles.imgContainer} key={i}>
-                <Image src={img}  alt="" fill/>
-            </div>   
+                    <Image src={img}  alt="" fill  objectFit='contain'/>
+                </div>   
             ))}  
         </div>
         <div className={styles.ArrowContainer} style={{left:0}}>
