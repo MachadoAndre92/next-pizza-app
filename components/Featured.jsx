@@ -10,17 +10,16 @@ const Featured = () => {
     ];
   return (
     <div className={styles.container}>
+        
+        <div className={styles.wrapper}>            
+            {images.map((img, i)=>(
+                <div className={styles.imgContainer} key={i}>
+                <Image src={img}  alt="" fill/>
+            </div>   
+            ))}  
+        </div>
         <div className={styles.ArrowContainer} style={{left:0}}>
             <Image src="/img/arrowl.png" alt="" fill/>
-        </div>
-        <div className={styles.wrapper}>
-            <div className={styles.imgContainer}>
-                {images.map((img, i)=>
-                    <Image src={img} key={i} alt="" fill/>
-                    
-                )}
-                
-            </div>
         </div>
         <div className={styles.ArrowContainer} style={{right:0}}>
             <Image src="/img/arrowr.png" alt="" fill/>

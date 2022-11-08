@@ -15,8 +15,9 @@
     margin: auto;
     cursor: pointer;
 }
+
 .wrapper{
-    
+    width: 300vw;
 }
 .imgContainer{
     position: static;
